@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	
+	<!-- start Quiz button -->
+    <div class="start_btn">
+    	<div class="fillform">
+    		<form action="" method="GET" class="start_form" id="start_form">
+	            <div class="form-group2">
+	              <input type="text" class="form-control2" id="name2" placeholder="Name" name="form1" style="width:281.25px; font-size:15pt; margin-left: 0; margin-bottom: 20px;" required>
+	            </div> <!--
+	            <div class="form-group">
+	              <input type="text" class="form-control" id="surname" placeholder="Surname" name="form2" required>
+	            </div>    -->
+	        </form>
+    	</div>
+    	
+    	<button>Go to Instructions</button>
+    </div> 
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Read Carefully Before Starting the Test</span></div>
+        <div class="info-list">
+        	<div class="info">1. There are 10 questions in total to be answered.</div>
+            <div class="info">2. You will have <span>180 secs (3 mins)</span> for the entire questions.</div>
+            <div class="info">3. The questions are not difficult for someone conversant with the subject matter.</div>
+            <div class="info">4. Once the time goes off you view your result.</div>
+            <div class="info">5. You can also click the SUBMIT button at the bottom of the test page to submit your answers and view your result if you finish before the time goes off.</div>
+            <div class="info">6. Click the START button below to start the test.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">QUIT</button> 
+            <button class="restart">START</button>
+        </div>
+    </div> 
+    
+    <div class="quiz_box">
+    	<header>
+	        <div class="title">Test</div>
+	        <div class="timer">
+	            <div class="time_left_txt">Time Left</div>
+	            <div class="timer_sec">180</div>
+	        </div>
+	        <div class="time_line"></div>
+	    </header>
+
+	    <form name="quiz" id="quiz" class="quiz">
+	    	<!-- https://topessaywriter.org/physics-questions-and-answers-basic-physics/ -->
+			<div>
+				<p class="question">1. The minimum amount of energy required to remove the most loosely bonded electron is called what?</p>
+				<p><input type="radio" name="question1" value="Activation Energy">A. Activation Energy</p>
+				<p><input type="radio" name="question1" value="Ionisation Energy">B. Ionisation Energy</p>
+				<p><input type="radio" name="question1" value="Potential Energy">C. Potential Energy</p>
+				<p><input type="radio" name="question1" value="Electronegativity">D. Electronegativity</p>
+			</div>
+			<div>
+				<p class="question">2. Who was the first person to design models of flying machine?</p>
+				<p><input type="radio" name="question2" value="Vladimir Putin">A. Vladimir Putin</p>
+				<p><input type="radio" name="question2" value="Michael Farady">B. Michael Faraday</p>
+				<p><input type="radio" name="question2" value="Neil Armstrong">C. Neil Armstrong</p>
+				<p><input type="radio" name="question2" value="Leonardo da Vinci">D. Leonardo da Vinci</p>
+			</div>
+			<div>
+				<p class="question">3. Of the following quantities, which one has dimension different from the remaining three?</p>
+				<p><input type="radio" name="question3" value="Energy per unit volume">A. Energy per unit volume</p>
+				<p><input type="radio" name="question3" value="Force per unit area">B. Force per unit area</p>
+				<p><input type="radio" name="question3" value="Product of voltage and charge per unit volume">C. Product of voltage and charge per unit volume</p>
+				<p><input type="radio" name="question3" value="Angular momentum">D. Angular momentum</p>
+			</div>
+			<div>
+				<p class="question">4. In a particular system, the units of length, mass and time are chosen to be 10cm, 10g and 0.1s respectively. The unit of force in this system will be equivalent to __.</p>
+				<p><input type="radio" name="question4" value="0.1 N">A. 0.1 N</p>
+				<p><input type="radio" name="question4" value="1 N">B. 1 N</p>
+				<p><input type="radio" name="question4" value="10 N">C. 10 N</p>
+				<p><input type="radio" name="question4" value="100 N">D. 100 N</p>
+			</div>
+			<div>
+				<p class="question">5. A petrol engine used to mix petrol and air in a certain ratio for combustion, is called what?</p>
+				<p><input type="radio" name="question5" value="Radiator">A. Radiator</p>
+				<p><input type="radio" name="question5" value="Alternator">B. Alternator</p>
+				<p><input type="radio" name="question5" value="Carburettor">C. Carburettor</p>
+				<p><input type="radio" name="question5" value="Voltage regulator">D. Voltage regulator</p>
+			</div>
+			<div>
+				<p class="question">6. Which of the following is a dimensional constant?</p>
+				<p><input type="radio" name="question6" value="Refractive index">A. Refractive index</p>
+				<p><input type="radio" name="question6" value="Poissons ratio">B. Poissons ratio</p>
+				<p><input type="radio" name="question6" value="Relative density">C. Relative density</p>
+				<p><input type="radio" name="question6" value="Gravitational constant">D. Gravitational constant</p>
+			</div>
+			<div>
+				<p class="question">7. What happens to its frequency, when the tension of a string increases?</p>
+				<p><input type="radio" name="question7" value="Its vibration increases">A. Its vibration increases</p>
+				<p><input type="radio" name="question7" value="Its vibration decreases">B. Its vibration decreases</p>
+				<p><input type="radio" name="question7" value="Its vibration remains constant">C. Its vibration remains constant</p>
+				<p><input type="radio" name="question7" value="The tension of a string can never increase">D. The tension of a string can never increase</p>
+			</div>
+			<div>
+				<p class="question">8. Which one of the following groups have quantities that do not have the same dimensions?</p>
+				<p><input type="radio" name="question8" value="pressure, stress">A. pressure, stress</p>
+				<p><input type="radio" name="question8" value="velocity, speed">B. velocity, speed</p>
+				<p><input type="radio" name="question8" value="force, impulse">C. force, impulse</p>
+				<p><input type="radio" name="question8" value="work, energy">D. work, energy</p>
+			</div>
+			<div>
+				<p class="question">9. The force with which objects are attracted towards the centre of the earth is called __.</p>
+				<p><input type="radio" name="question9" value="centrifugal force">A. centrifugal force</p>
+				<p><input type="radio" name="question9" value="gravitational force">B. gravitational force</p>
+				<p><input type="radio" name="question9" value="force of life">C. force of life</p>
+				<p><input type="radio" name="question9" value="centripetal force">D. centripetal force</p>
+			</div>
+			<div>
+				<p class="question">10. Pick the odd one out.</p>
+				<p><input type="radio" name="question10" value="Rankine">A. Rankine</p>
+				<p><input type="radio" name="question10" value="Celsius">B. Celsius</p>
+				<p><input type="radio" name="question10" value="Kelvin">C. Kelvin</p>
+				<p><input type="radio" name="question10" value="Einstein">D. Einstein</p>
+			</div>
+
+			<div id="done2" class="done2">
+				<input type="button" name="" value="SUBMIT" style="width: 100px; margin-left: 225px; margin-right: 225px;" onclick="check()">
+				<!-- <button class="done" id="done">I'm done</button>-->
+			</div>
+			
+		</form>
+    </div>
+
+    <div class="result_box">
+    	<p id="result2"></p> 
+    </div> 
+	
+	<!-- Footer --> 
+	<div id="foot">
+		<footer>
+		  <div class="">
+		    <div class="row">
+		      <div class="col-xs-12">
+		            
+
+		        <p class="copyright">Developed by <a href="http://cmuonagor.com/">Muonagor Chukwuemeka.</a></p>
+		        
+		      </div>
+		    </div>
+		  </div>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
